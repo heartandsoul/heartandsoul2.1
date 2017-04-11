@@ -1,0 +1,41 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=56:BE:B4:AA:51:1D:E0:FE:08:F8:CE:79:74:B5:4F:27:96:89:76:92%3Bcom.heartandsoulcafe.heartandsoul
+
+    You can also add your credentials to an existing key, using this line:
+    56:BE:B4:AA:51:1D:E0:FE:08:F8:CE:79:74:B5:4F:27:96:89:76:92;com.heartandsoulcafe.heartandsoul
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=FB:F2:6D:A9:99:A4:59:03:3B:AD:6C:D4:55:15:E7:FA:85:4C:AD:39%3Bcom.heartandsoulcafe.heartandsoul
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    FB:F2:6D:A9:99:A4:59:03:3B:AD:6C:D4:55:15:E7:FA:85:4C:AD:39
+
+    SHA-1 certificate fingerprint:
+    FB:F2:6D:A9:99:A4:59:03:3B:AD:6C:D4:55:15:E7:FA:85:4C:AD:39
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCByfI6LQ3LO9G3Dm9XQ9uT5uXIidL1vEY</string>
+</resources>

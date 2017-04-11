@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.heartandsoulcafe.heartandsoul.SignupActivity">
+
+    <include android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_Name"
+        android:layout_alignBottom="@+id/et_Name"
+        android:layout_alignStart="@+id/tvEmail"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_email"
+        android:layout_alignBottom="@+id/et_email"
+        android:layout_alignStart="@+id/tvPassword"
+        android:text="Email" />
+
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_password"
+        android:layout_alignBottom="@+id/et_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/et_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_email"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_below="@+id/et_Name"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/tvPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:onClick="OnReg"
+        android:text="Sign up"/>
+
+</RelativeLayout>

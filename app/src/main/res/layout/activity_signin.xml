@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.heartandsoulcafe.heartandsoul.SigninActivity">
+
+    <include android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_password"
+        android:layout_alignBottom="@+id/et_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:text="Password" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_Feedback"
+        android:layout_alignBottom="@+id/et_Feedback"
+        android:layout_alignStart="@+id/textView9"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Feedback"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_Feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="11dp"
+        android:onClick="OnLogin"
+        android:text="Sign in" />
+
+</RelativeLayout>

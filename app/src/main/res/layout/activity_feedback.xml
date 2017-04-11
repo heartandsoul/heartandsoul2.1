@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.heartandsoulcafe.heartandsoul.feedbackActivity">
+
+
+    <include android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_Title"
+        android:layout_alignBottom="@+id/et_Title"
+        android:layout_alignStart="@+id/tvMail"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_mail"
+        android:layout_alignBottom="@+id/et_mail"
+        android:layout_alignStart="@+id/tvFeedback"
+        android:text="Email" />
+
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_Feedback"
+        android:layout_alignBottom="@+id/et_Feedback"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:text="Feedback" />
+
+
+
+    <EditText
+        android:id="@+id/et_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_mail"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Feedback"
+        android:layout_below="@+id/et_Title"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/et_Feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mail"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/tvFeedback"
+        android:ems="10"
+        android:hint="Your feedback"
+        android:inputType="textMultiLine"
+         />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Feedback"
+        android:layout_below="@+id/et_Feedback"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+
+    tools:context="com.heartandsoulcafe.heartandsoul.WelcomeActivity">
+
+    <include android:id="@+id/my_toolbar"
+       layout="@layout/toolbar"/>
+
+
+    <Button
+        android:id="@+id/bSignin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvGotohome"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/action_sign_in_short"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bSignup"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvGotohome"
+        android:layout_alignStart="@id/tvGotohome"
+        android:layout_below="@+id/bSignin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/action_sign_up_short"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_toolbar"/>
+
+    <TextView
+        android:id="@+id/tvGotohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bSignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:text="@string/action_goto_home"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+
+</RelativeLayout>

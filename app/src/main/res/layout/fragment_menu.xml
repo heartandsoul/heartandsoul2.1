@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.heartandsoulcafe.heartandsoul.menuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <TextView
+        android:id="@+id/tvHotfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Hotfood &amp; Salads"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="22dp"
+
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/tvBreakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:text="Breakfast"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="22dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="Lunch"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="22dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:text="Drinks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="22dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:text="Sweets"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="22dp"
+
+        android:textStyle="bold" />
+
+
+
+</FrameLayout>

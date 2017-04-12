@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -23,7 +22,6 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    FragmentTransaction fragmentTransaction;
     DrawerLayout drawer;
 
     Toolbar toolbar;
@@ -96,11 +94,15 @@ public class HomeActivity extends AppCompatActivity
 
         switch (item.getItemId()) {
             case R.id.menu_1:
-                Toast.makeText(HomeActivity.this, "You are In Login page", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, SigninActivity.class));
+
+                        Toast.makeText(HomeActivity.this, "You are In Login page", Toast.LENGTH_SHORT).show();
 
                 break;
             case R.id.menu_2:
-                Toast.makeText(HomeActivity.this, "You are Logged out successfully!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, SignupActivity.class));
+
+                Toast.makeText(HomeActivity.this, "You are in Sign Up page", Toast.LENGTH_SHORT).show();
 
         }
 
@@ -112,6 +114,7 @@ public class HomeActivity extends AppCompatActivity
 
         int id = item.getItemId();
         android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+
         if (id == R.id.nav_home) {
             homeFragment hmFragment = new homeFragment();
             fragmentManager.beginTransaction().replace(R.id.relative_layout_for_fragment, hmFragment, hmFragment.getTag()).commit();

@@ -2,7 +2,6 @@ package com.heartandsoulcafe.heartandsoul;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +13,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class locationFragment extends Fragment implements OnMapReadyCallback {
+public class locationFragment extends android.support.v4.app.Fragment implements OnMapReadyCallback{
 
+
+
+
+    public locationFragment() {
+        // Required empty public constructor
+    }
 
     @Nullable
     @Override
@@ -24,27 +29,32 @@ public class locationFragment extends Fragment implements OnMapReadyCallback {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         SupportMapFragment fragment = SupportMapFragment.newInstance();
         getChildFragmentManager().findFragmentById(R.id.map);
         fragment.getMapAsync(this);
-
     }
+
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-
-
-
-       LatLng marker = new LatLng(12, 151);
+        LatLng marker = new LatLng(-34.053543, 151.153462);
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, 20));
 
         googleMap.addMarker(new MarkerOptions().title("Heart and soul location!").position(marker));
+
+        googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
-
-
 }
+
+
+
+
+
+
+

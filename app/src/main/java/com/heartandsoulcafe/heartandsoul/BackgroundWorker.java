@@ -30,8 +30,8 @@ class BackgroundWorker extends AsyncTask<String, Void, String > {
     @Override
     protected String doInBackground (String ... params) {
         String type = params[0];
-        String login_url = "http://10.0.2.2/connect/login.php";
-        String register_url = "http://10.0.2.2/connect/registration.php";
+        String login_url = "https://heartandsoul.000webhostapp.com/connect/login.php";
+        String register_url = "https://heartandsoul.000webhostapp.com/connect/registration.php";
 
 
 

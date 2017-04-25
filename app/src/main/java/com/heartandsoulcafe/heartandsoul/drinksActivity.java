@@ -66,7 +66,7 @@ public class drinksActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("http://10.0.2.2/connect/drinksItem.json");
+                new ReadJSON().execute("https://heartandsoul.000webhostapp.com/connect/drinksItem.json");
             }
         });
 

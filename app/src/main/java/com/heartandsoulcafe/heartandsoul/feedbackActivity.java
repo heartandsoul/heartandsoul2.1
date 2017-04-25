@@ -31,7 +31,7 @@ public class feedbackActivity extends AppCompatActivity {
     Button Submit;
 
     RequestQueue requestQueue;
-    String insertUrl = "http://10.0.2.2/connect/insertFeed.php";
+    String insertUrl = "https://heartandsoul.000webhostapp.com/connect/insertFeed.php";
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.

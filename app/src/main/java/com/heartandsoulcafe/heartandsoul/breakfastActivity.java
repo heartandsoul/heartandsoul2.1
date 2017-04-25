@@ -64,7 +64,7 @@ public class breakfastActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("http://10.0.2.2/connect/breakfastItems.json");
+                new ReadJSON().execute("https://heartandsoul.000webhostapp.com/connect/breakfastItems.json");
             }
         });
 

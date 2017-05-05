@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.loginRegister;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +7,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
+import com.heartandsoulcafe.heartandsoul.R;
+
 public class SignupActivity extends AppCompatActivity {
-    EditText name, email, password;
+    EditText name, email, password, rePassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +20,7 @@ public class SignupActivity extends AppCompatActivity {
         name = (EditText) findViewById(R.id.et_Name);
         email = (EditText) findViewById(R.id.et_email);
         password = (EditText) findViewById(R.id.et_password);
+        rePassword = (EditText) findViewById(R.id.et_rePassword);
 
         Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
@@ -39,10 +42,14 @@ public class SignupActivity extends AppCompatActivity {
         String str_name = name.getText().toString();
         String str_email = email.getText().toString();
         String str_password = password.getText().toString();
+        String str_rePassword = rePassword.getText().toString();
         String type = "Register";
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(type, str_name, str_email, str_password);
+        backgroundWorker.execute(type, str_name, str_email, str_password, str_rePassword);
     }
 
-}
+
+    }
+
+

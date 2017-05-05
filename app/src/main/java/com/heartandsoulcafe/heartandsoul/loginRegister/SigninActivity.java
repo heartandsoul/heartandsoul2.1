@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.loginRegister;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+
+import com.heartandsoulcafe.heartandsoul.R;
 
 public class SigninActivity extends AppCompatActivity {
 
@@ -22,7 +24,7 @@ public class SigninActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(R.string.title_activity_login);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        UsernameEt = (EditText) findViewById(R.id.et_Feedback);
+        UsernameEt = (EditText) findViewById(R.id.et_email);
         PasswordEt = (EditText)findViewById(R.id.et_password);
     }
 

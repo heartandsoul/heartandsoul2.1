@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.heartandsoulcafe.heartandsoul.loginRegister.SigninActivity;
+import com.heartandsoulcafe.heartandsoul.loginRegister.SignupActivity;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

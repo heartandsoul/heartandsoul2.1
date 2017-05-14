@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.general_classes;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +18,12 @@ import android.widget.Toast;
 
 
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.heartandsoulcafe.heartandsoul.R;
+import com.heartandsoulcafe.heartandsoul.admin_part.activity.LoginActivity;
+import com.heartandsoulcafe.heartandsoul.fragments.contactFragment;
+import com.heartandsoulcafe.heartandsoul.fragments.homeFragment;
+import com.heartandsoulcafe.heartandsoul.fragments.locationFragment;
+import com.heartandsoulcafe.heartandsoul.fragments.menuFragment;
 import com.heartandsoulcafe.heartandsoul.loginRegister.SigninActivity;
 import com.heartandsoulcafe.heartandsoul.loginRegister.SignupActivity;
 
@@ -105,6 +111,12 @@ public class HomeActivity extends AppCompatActivity
                 startActivity(new Intent(this, SignupActivity.class));
 
                 Toast.makeText(HomeActivity.this, "You are in Sign Up page", Toast.LENGTH_SHORT).show();
+
+                break;
+            case R.id.menu_3:
+                startActivity(new Intent(this, LoginActivity.class));
+
+                Toast.makeText(HomeActivity.this, "You are in Admin Login page", Toast.LENGTH_SHORT).show();
 
         }
 

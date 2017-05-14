@@ -51,6 +51,9 @@
     <string name="special_deals">Special Deals</string>
     <string name="title_activity_detail">DetailActivity</string>
     <string name="address">6/17 Gerrale street, Cronulla, NSW 2230</string>
+    <string name="title_activity_admin_login">adminLogin</string>
 
+
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
 
 </resources>

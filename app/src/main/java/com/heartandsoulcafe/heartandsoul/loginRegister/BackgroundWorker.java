@@ -114,7 +114,7 @@ class BackgroundWorker extends AsyncTask<String, Void, String > {
     @Override
     protected void onPreExecute (){
         alertDialog = new AlertDialog.Builder(context).create();
-        alertDialog.setTitle("Login Status");
+        alertDialog.setTitle("Status");
     }
 
 
@@ -122,6 +122,7 @@ class BackgroundWorker extends AsyncTask<String, Void, String > {
     protected void onPostExecute(String result) {
         alertDialog.setMessage(result);
         alertDialog.show();
+
     }
 
     @Override

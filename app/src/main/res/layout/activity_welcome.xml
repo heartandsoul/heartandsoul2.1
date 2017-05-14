@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/start"
 
-    tools:context="com.heartandsoulcafe.heartandsoul.WelcomeActivity">
+    tools:context="com.heartandsoulcafe.heartandsoul.general_classes.WelcomeActivity">
 
     <include android:id="@+id/my_toolbar"
        layout="@layout/toolbar"/>

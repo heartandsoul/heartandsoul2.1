@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.general_classes;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ListView;
+
+import com.heartandsoulcafe.heartandsoul.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,7 +21,8 @@ import java.util.ArrayList;
 
 
 
-public class launchActivity extends AppCompatActivity {
+
+public class hotfoodActivity extends AppCompatActivity {
 
     ArrayList<Items> arrayList;
     ListView lv;
@@ -48,13 +51,13 @@ public class launchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_launch);
+        setContentView(R.layout.activity_hotfood);
 
 
         Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
 
-        getSupportActionBar().setTitle(R.string.title_activity_lunch);
+        getSupportActionBar().setTitle(R.string.title_activity_hotfood);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
@@ -65,7 +68,7 @@ public class launchActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("https://heartandsoul.000webhostapp.com/connect/lunchItems.json");
+                new ReadJSON().execute("https://heartandsoul.000webhostapp.com/connect/hotfoodItems.json");
             }
         });
 
@@ -91,9 +94,9 @@ public class launchActivity extends AppCompatActivity {
         protected void onPostExecute(String content) {
             try {
                 JSONObject jsonObject = new JSONObject(content);
-                JSONArray jsonArray = jsonObject.getJSONArray("items");
+                JSONArray jsonArray =  jsonObject.getJSONArray("items");
 
-                for (int i = 0; i < jsonArray.length(); i++) {
+                for(int i =0;i<jsonArray.length(); i++){
                     JSONObject productObject = jsonArray.getJSONObject(i);
                     arrayList.add(new Items(
                             productObject.getString("image"),
@@ -113,7 +116,7 @@ public class launchActivity extends AppCompatActivity {
     }
 
 
-    }
+        }
 
 
 

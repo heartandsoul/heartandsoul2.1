@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.general_classes;
 
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ListView;
+
+import com.heartandsoulcafe.heartandsoul.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,7 +21,9 @@ import java.util.ArrayList;
 
 
 
-public class sweetsActivity extends AppCompatActivity {
+public class drinksActivity extends AppCompatActivity {
+
+
     ArrayList<Items> arrayList;
     ListView lv;
 
@@ -47,13 +51,13 @@ public class sweetsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sweets);
+        setContentView(R.layout.activity_drinks);
 
 
         Toolbar my_toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(my_toolbar);
 
-        getSupportActionBar().setTitle(R.string.title_activity_sweets);
+        getSupportActionBar().setTitle(R.string.title_activity_drinks);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
@@ -64,7 +68,7 @@ public class sweetsActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("https://heartandsoul.000webhostapp.com/connect/sweetsItem.json");
+                new ReadJSON().execute("https://heartandsoul.000webhostapp.com/connect/drinksItem.json");
             }
         });
 
@@ -85,6 +89,8 @@ public class sweetsActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             return readURL(params[0]);
         }
+
+
 
         @Override
         protected void onPostExecute(String content) {

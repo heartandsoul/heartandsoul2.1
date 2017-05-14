@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.general_classes;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.heartandsoulcafe.heartandsoul.R;
 import com.heartandsoulcafe.heartandsoul.loginRegister.SigninActivity;
 import com.heartandsoulcafe.heartandsoul.loginRegister.SignupActivity;
 

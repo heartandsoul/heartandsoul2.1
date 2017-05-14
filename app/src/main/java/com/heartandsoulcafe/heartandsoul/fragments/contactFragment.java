@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.fragments;
 
 
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.support.annotation.Nullable;
 import android.net.Uri;
 
 import android.widget.*;
+
+import com.heartandsoulcafe.heartandsoul.R;
 
 
 public class contactFragment extends Fragment {

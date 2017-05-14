@@ -58,6 +58,6 @@
         android:layout_below="@+id/et_password"
         android:layout_marginTop="11dp"
         android:onClick="OnLogin"
-        android:text="Sign in" />
+        android:text="Login" />
 
 </RelativeLayout>

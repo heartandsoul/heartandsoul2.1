@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.heartandsoulcafe.heartandsoul.admin_part.activity.LoginActivity">
+    tools:context="com.heartandsoulcafe.heartandsoul.admin_part.activity.RegisterActivity">
 
     <include android:id="@+id/my_toolbar"
         layout="@layout/toolbar"/>
@@ -19,37 +19,57 @@
         android:paddingRight="20dp" >
 
         <EditText
-            android:id="@+id/admin_email"
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Admin name"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/email"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:padding="10dp" />
+            android:padding="10dp"
+            />
 
         <EditText
-            android:id="@+id/admin_password"
+            android:id="@+id/password"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="10dp"
-    />
+          />
 
         <!-- Login Button -->
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnRegister"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:text="Login" />
+            android:background="#ea4c88"
+            android:text="Register"
+           />
 
+        <!-- Link to Login Screen -->
 
-
-
-
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Login page"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
     </LinearLayout>
 
 </RelativeLayout>

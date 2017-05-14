@@ -1,4 +1,4 @@
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.fragments;
 
 
 import android.content.Intent;
@@ -11,6 +11,13 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.heartandsoulcafe.heartandsoul.R;
+import com.heartandsoulcafe.heartandsoul.general_classes.breakfastActivity;
+import com.heartandsoulcafe.heartandsoul.general_classes.drinksActivity;
+import com.heartandsoulcafe.heartandsoul.general_classes.hotfoodActivity;
+import com.heartandsoulcafe.heartandsoul.general_classes.launchActivity;
+import com.heartandsoulcafe.heartandsoul.general_classes.sweetsActivity;
 
 /**
  * A simple {@link Fragment} subclass.

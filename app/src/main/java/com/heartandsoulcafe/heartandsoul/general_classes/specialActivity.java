@@ -1,11 +1,13 @@
 
 
-package com.heartandsoulcafe.heartandsoul;
+package com.heartandsoulcafe.heartandsoul.general_classes;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import com.heartandsoulcafe.heartandsoul.R;
 
 public class specialActivity extends AppCompatActivity {
 

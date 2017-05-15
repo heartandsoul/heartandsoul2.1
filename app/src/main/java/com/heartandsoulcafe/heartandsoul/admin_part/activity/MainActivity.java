@@ -1,11 +1,13 @@
 package com.heartandsoulcafe.heartandsoul.admin_part.activity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,10 +18,9 @@ import com.heartandsoulcafe.heartandsoul.admin_part.helper.SessionManager;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+    TextView txt;
+    Intent i;
     private TextView txtName;
-
-
-
     private SQLiteHandler db;
     private SessionManager session;
 
@@ -35,8 +36,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         txtName = (TextView) findViewById(R.id.admin_name);
-
-
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "Pacifico.ttf");
+        txt = (TextView) findViewById(R.id.tvMembers);
+        txt.setTypeface(myTypeface);
+        txt = (TextView) findViewById(R.id.tvBooking);
+        txt.setTypeface(myTypeface);
+        txt = (TextView) findViewById(R.id.tvFeeds);
+        txt.setTypeface(myTypeface);
+        txt = (TextView) findViewById(R.id.tvItems);
+        txt.setTypeface(myTypeface);
 
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
@@ -57,7 +65,58 @@ public class MainActivity extends AppCompatActivity {
         txtName.setText(name);
 
 
+        View.OnClickListener listener1 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                i = new Intent(MainActivity.this, member.class);
+                startActivity(i);
+
+            }
+        };
+        final TextView memberLink = (TextView) findViewById(R.id.tvMembers);
+        memberLink.setOnClickListener(listener1);
+
+        View.OnClickListener listener2 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                i = new Intent(MainActivity.this, booking.class);
+                startActivity(i);
+
+            }
+
+        };
+        final TextView bookingLink = (TextView) findViewById(R.id.tvBooking);
+        bookingLink.setOnClickListener(listener2);
+
+        View.OnClickListener listener3 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                i = new Intent(MainActivity.this, feeds.class);
+                startActivity(i);
+
+            }
+
+        };
+        final TextView feedbackLink = (TextView) findViewById(R.id.tvFeeds);
+        feedbackLink.setOnClickListener(listener3);
+
+
+        View.OnClickListener listener4 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                i = new Intent(MainActivity.this, items.class);
+                startActivity(i);
+
+            }
+
+        };
+        final TextView itemLink = (TextView) findViewById(R.id.tvItems);
+        itemLink.setOnClickListener(listener4);
+
     }
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

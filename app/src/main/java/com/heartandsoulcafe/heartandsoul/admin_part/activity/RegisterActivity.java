@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,7 +32,6 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity {
     private static final String TAG = RegisterActivity.class.getSimpleName();
     private Button btnRegister;
-    private Button btnLinkToLogin;
     private EditText inputFullName;
     private EditText inputEmail;
     private EditText inputPassword;
@@ -55,7 +55,6 @@ public class RegisterActivity extends AppCompatActivity {
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
         btnRegister = (Button) findViewById(R.id.btnRegister);
-        btnLinkToLogin = (Button) findViewById(R.id.btnLinkToLoginScreen);
 
         // Progress dialog
         pDialog = new ProgressDialog(this);
@@ -95,16 +94,6 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        // Link to Login Screen
-        btnLinkToLogin.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),
-                        LoginActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });
 
     }
 
@@ -189,10 +178,19 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
 
+
         };
 
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId()==android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
     }
 
     private void showDialog() {

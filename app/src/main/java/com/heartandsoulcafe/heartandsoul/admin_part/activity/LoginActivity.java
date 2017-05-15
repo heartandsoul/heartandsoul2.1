@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +20,7 @@ import com.heartandsoulcafe.heartandsoul.admin_part.app.AppConfig;
 import com.heartandsoulcafe.heartandsoul.admin_part.app.AppController;
 import com.heartandsoulcafe.heartandsoul.admin_part.helper.SQLiteHandler;
 import com.heartandsoulcafe.heartandsoul.admin_part.helper.SessionManager;
+import com.heartandsoulcafe.heartandsoul.general_classes.HomeActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = RegisterActivity.class.getSimpleName();
     private Button btnLogin;
+    private Button btnHome;
     private EditText inputEmail;
     private EditText inputPassword;
     private ProgressDialog pDialog;
@@ -49,11 +50,11 @@ public class LoginActivity extends AppCompatActivity {
         setSupportActionBar(my_toolbar);
 
         getSupportActionBar().setTitle("Admin Login");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         inputEmail = (EditText) findViewById(R.id.admin_email);
         inputPassword = (EditText) findViewById(R.id.admin_password);
         btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnHome = (Button) findViewById(R.id.btnLinkHome);
 
 
         // Progress dialog
@@ -95,15 +96,17 @@ public class LoginActivity extends AppCompatActivity {
 
         });
 
+        btnHome.setOnClickListener(new View.OnClickListener() {
 
-    }
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),
+                        HomeActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(item.getItemId()==android.R.id.home)
-            finish();
-        return super.onOptionsItemSelected(item);
     }
 
 

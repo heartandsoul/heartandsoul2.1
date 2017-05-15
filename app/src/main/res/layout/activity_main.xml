@@ -3,6 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="@drawable/back"
 tools:context="com.heartandsoulcafe.heartandsoul.admin_part.activity.MainActivity">
 
 <include android:id="@+id/my_toolbar"
@@ -29,10 +30,72 @@ tools:context="com.heartandsoulcafe.heartandsoul.admin_part.activity.MainActivit
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="17dp" />
-
-
-
 </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvMembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Members"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="24dp"
+
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/tvBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:text="Bookings"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="24dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFeeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="210dp"
+        android:text="Feedback"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="24dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="270dp"
+        android:text="Menus"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#403131"
+        android:textSize="24dp"
+
+        android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+
 
 
 </RelativeLayout>

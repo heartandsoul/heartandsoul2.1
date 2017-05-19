@@ -208,11 +208,6 @@ public class RegisterActivity extends AppCompatActivity {
 
         db.deleteUsers();
 
-        // Launching the login activity
-        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-        startActivity(intent);
-        finish();
-
     }
 
 }

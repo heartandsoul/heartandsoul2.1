@@ -34,8 +34,7 @@
             android:layout_marginBottom="10dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="10dp"
-    />
+            android:padding="10dp" />
 
         <!-- Login Button -->
 

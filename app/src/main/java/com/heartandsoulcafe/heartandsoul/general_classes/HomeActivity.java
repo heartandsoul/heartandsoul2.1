@@ -32,7 +32,6 @@ public class HomeActivity extends AppCompatActivity
     Toolbar toolbar;
 
 
-
     private GoogleApiClient client;
 
     @Override
@@ -43,8 +42,6 @@ public class HomeActivity extends AppCompatActivity
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Home");
-
-
 
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

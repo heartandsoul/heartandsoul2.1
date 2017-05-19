@@ -59,7 +59,6 @@
             android:text="Register"
            />
 
-        <!-- Link to Login Screen -->
 
 
     </LinearLayout>

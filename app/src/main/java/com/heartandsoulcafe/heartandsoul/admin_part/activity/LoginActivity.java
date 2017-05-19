@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+
 import com.heartandsoulcafe.heartandsoul.R;
 import com.heartandsoulcafe.heartandsoul.admin_part.app.AppConfig;
 import com.heartandsoulcafe.heartandsoul.admin_part.app.AppController;
@@ -51,11 +53,11 @@ public class LoginActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Admin Login");
 
+
         inputEmail = (EditText) findViewById(R.id.admin_email);
         inputPassword = (EditText) findViewById(R.id.admin_password);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnHome = (Button) findViewById(R.id.btnLinkHome);
-
 
         // Progress dialog
         pDialog = new ProgressDialog(this);
@@ -96,6 +98,7 @@ public class LoginActivity extends AppCompatActivity {
 
         });
 
+        // Link to Register Screen
         btnHome.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -106,9 +109,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
-    }
-
+}
 
     /**
      * function to verify login details in mysql db
@@ -190,6 +191,7 @@ public class LoginActivity extends AppCompatActivity {
             }
 
         };
+
 
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);

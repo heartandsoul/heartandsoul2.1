@@ -14,6 +14,120 @@
     tools:showIn="@layout/app_bar_home">
 
     <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView22"
+        android:text="6:00 AM"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/textView25"
+        android:text="SAT"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:text="FRI"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:text="TUE"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_below="@+id/textView23"
+        android:text="WED"
+        android:textColor="#cacaca"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/textView42"
+        android:text="5:00PM"
+        android:textColor="#cacaca" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/textView34"
+        android:text="5:00PM"
+        android:textColor="#cacaca" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/textView41"
+        android:text="5:00PM"
+        android:textColor="#cacaca" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/textView39"
+        android:text="5:00PM"
+        android:textColor="#cacaca" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/textView33"
+        android:text="5:00PM"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_below="@+id/textView21"
+        android:text="5:00PM"
+        android:textColor="#cacaca"/>
+
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:text="6:00 AM"
+        android:textColor="#cacaca"/>
+
+    <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,29 +144,126 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="80dp"
         android:text="Opens 7 days a week"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#0B486B"
         android:textSize="17dp"
+        android:textStyle="bold" />
 
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal"
+        android:text="Opening Hours"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#cacaca"
+        android:textSize="19dp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/open_hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="10dp"
-        android:text="7am to 5pm"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center_horizontal"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#4B666E"
+        android:textColor="#cacaca"
         android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/open_hours"
+        android:layout_marginTop="11dp"
+        android:layout_toStartOf="@+id/tvWelcome"
+        android:text="MON"
+        android:textColor="#cacaca"/>
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView19"
+        android:text="6:00 AM"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_alignTop="@+id/textView22"
+        android:text="6:00 AM"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView29"
+        android:text="6:00 AM"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView28"
+        android:text="6:00 AM"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView27"
+        android:text="6:00 AM"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:text="THU"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:text="SUN"
+        android:textColor="#cacaca"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/tvWelcome"
+        android:text="5:00PM"
+        android:textColor="#cacaca" />
 
 
 </RelativeLayout>

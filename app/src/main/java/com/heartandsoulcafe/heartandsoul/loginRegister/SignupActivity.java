@@ -1,11 +1,13 @@
 package com.heartandsoulcafe.heartandsoul.loginRegister;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.heartandsoulcafe.heartandsoul.R;
 
@@ -47,6 +49,11 @@ public class SignupActivity extends AppCompatActivity {
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, str_name, str_email, str_password, str_rePassword);
+
+        Intent intent = new Intent(SignupActivity.this,
+                SigninActivity.class);
+        startActivity(intent);
+        Toast.makeText(SignupActivity.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
     }
 
 

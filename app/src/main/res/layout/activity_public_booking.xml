@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.heartandsoulcafe.heartandsoul.general_classes.publicBooking">
+
+
+    <include android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tvBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Book your table here"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_Title"
+        android:layout_alignBottom="@+id/et_Title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_mail"
+        android:layout_alignBottom="@+id/et_mail"
+        android:layout_alignStart="@+id/tvFeedback"
+        android:layout_marginStart="25dp"
+        android:text="Email"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_number"
+            android:layout_alignBottom="@+id/et_number"
+            android:layout_alignStart="@+id/tvDate"
+            android:text="Number of People" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_date"
+            android:layout_alignBottom="@+id/et_date"
+            android:layout_alignStart="@+id/tvTime"
+            android:text="Date" />
+
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_time"
+        android:layout_alignBottom="@+id/et_time"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:text="Time" />
+
+
+
+    <EditText
+        android:id="@+id/et_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="101dp"
+        android:layout_toEndOf="@+id/tv_number"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Title"
+        android:layout_below="@+id/et_Title"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_mail"
+            android:layout_below="@+id/et_mail"
+            android:ems="10"
+            android:hint="type a number"
+            android:inputType="textPersonName|number" />
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_number"
+            android:layout_below="@+id/et_number"
+            android:ems="10"
+            android:hint="When to book"
+            android:inputType="date" />
+
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_date"
+            android:layout_below="@+id/et_date"
+            android:ems="10"
+            android:hint="What time"
+            android:inputType="datetime" />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_time"
+        android:layout_below="@+id/et_time"
+        android:layout_marginTop="20dp"
+        android:text="Book" />
+    </RelativeLayout>
+
+</RelativeLayout>

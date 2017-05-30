@@ -133,7 +133,11 @@ public class HomeActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.relative_layout_for_fragment, mnFragment, mnFragment.getTag()).commit();
             getSupportActionBar().setTitle("Menus");
 
-       } else if (id == R.id.nav_location) {
+        } else if (id == R.id.nav_book) {
+            startActivity(new Intent(getApplicationContext(), publicBooking.class));
+
+
+        } else if (id == R.id.nav_location) {
          locationFragment locFragment = new locationFragment();
             fragmentManager.beginTransaction().replace(R.id.relative_layout_for_fragment, locFragment, locFragment.getTag()).commit();
             getSupportActionBar().setTitle("Location");

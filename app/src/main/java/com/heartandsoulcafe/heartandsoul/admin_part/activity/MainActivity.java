@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.heartandsoulcafe.heartandsoul.R;
+import com.heartandsoulcafe.heartandsoul.admin_part.activity.members.member;
 import com.heartandsoulcafe.heartandsoul.admin_part.helper.SQLiteHandler;
 import com.heartandsoulcafe.heartandsoul.admin_part.helper.SessionManager;
 

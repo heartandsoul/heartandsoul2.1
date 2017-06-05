@@ -37,7 +37,7 @@ public class Parser extends AsyncTask<Void,Void,Boolean> {
         super.onPreExecute();
         pd=new ProgressDialog(c);
         pd.setTitle("Parse");
-        pd.setMessage("Pasring..Please wait");
+        pd.setMessage("Parsing..Please wait");
         pd.show();
     }
     @Override
